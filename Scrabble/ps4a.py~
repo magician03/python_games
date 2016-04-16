@@ -1,9 +1,4 @@
-# 6.00x Problem Set 4A Template
-#
-# The 6.00 Word Game
-# Created by: Kevin Luu <luuk> and Jenna Wiens <jwiens>
-# Modified by: Sarina Canelake <sarina>
-#
+
 
 import random
 import string
@@ -16,9 +11,7 @@ SCRABBLE_LETTER_VALUES = {
     'a': 1, 'b': 3, 'c': 3, 'd': 2, 'e': 1, 'f': 4, 'g': 2, 'h': 4, 'i': 1, 'j': 8, 'k': 5, 'l': 1, 'm': 3, 'n': 1, 'o': 1, 'p': 3, 'q': 10, 'r': 1, 's': 1, 't': 1, 'u': 1, 'v': 4, 'w': 4, 'x': 8, 'y': 4, 'z': 10
 }
 
-# -----------------------------------
-# Helper code
-# (you don't need to understand this helper code)
+
 
 WORDLIST_FILENAME = "words.txt"
 
@@ -55,11 +48,10 @@ def getFrequencyDict(sequence):
     return freq
 	
 
-# (end of helper code)
-# -----------------------------------
+
 
 #
-# Problem #1: Scoring a word
+# Scoring a word
 #
 def getWordScore(word, n):
     """
@@ -93,7 +85,7 @@ def getWordScore(word, n):
 
 
 #
-# Problem #2: Make sure you understand how this function works and what it does!
+# Make sure you understand how this function works and what it does!
 #
 def displayHand(hand):
     """
@@ -113,7 +105,7 @@ def displayHand(hand):
     print                               # print an empty line
 
 #
-# Problem #2: Make sure you understand how this function works and what it does!
+#  Make sure you understand how this function works and what it does!
 #
 def dealHand(n):
     """
@@ -141,7 +133,7 @@ def dealHand(n):
     return hand
 
 #
-# Problem #2: Update a hand by removing letters
+#Update a hand by removing letters
 #
 def updateHand(hand, word):
     """
@@ -168,7 +160,7 @@ def updateHand(hand, word):
 
 
 #
-# Problem #3: Test word validity
+# Test word validity
 #
 def isValidWord(word, hand, wordList):
     """
@@ -194,7 +186,7 @@ def isValidWord(word, hand, wordList):
     return True
 
 #
-# Problem #4: Playing a hand
+
 #
 
 def calculateHandlen(hand):
